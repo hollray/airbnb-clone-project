@@ -104,7 +104,7 @@ Brief description of each role and their responsibility in the project(from the 
 
 
 
-DATABASE DESIGN:
+Database Design:
 
 
 
