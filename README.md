@@ -97,3 +97,138 @@ Brief description of each role and their responsibility in the project(from the 
    Frontend developer: Front-end developers create the part of an application that users interact with, ensuring that an app offers an equally smooth experience to all—no matter the device, platform, or operational system.
 2. DevOps Engineer: Facilitates cooperation between development and operations teams. Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery.
 3. QA/Engineer: Quality assurance (QA) engineer: Makes sure an application performs according to requirements. Spots functional and non-functional defects.
+
+
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+
+
+
+DATABASE DESIGN:
+
+
+
+1. API Documentation:
+
+&nbsp;	OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
+
+&nbsp;	Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
+
+&nbsp;	GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend.
+
+2\. User Authentication
+
+&nbsp;	Endpoints: /users/, /users/{user\_id}/
+
+&nbsp;	Features: Register new users, authenticate, and manage user profiles.
+
+3\. Property Management
+
+&nbsp;	Endpoints: /properties/, /properties/{property\_id}/
+
+&nbsp;	Features: Create, update, retrieve, and delete property listings.
+
+4\. Booking System
+
+&nbsp;	Endpoints: /bookings/, /bookings/{booking\_id}/
+
+&nbsp;	Features: Make, update, and manage bookings, including check-in and check-out details.
+
+5\. Payment Processing
+
+&nbsp;	Endpoints: /payments/
+
+&nbsp;	Features: Handle payment transactions related to bookings.
+
+6\. Review System
+
+&nbsp;	Endpoints: /reviews/, /reviews/{review\_id}/
+
+&nbsp;	Features: Post and manage reviews for properties.
+
+7\. Database Optimizations
+
+&nbsp;	Indexing: Implement indexes for fast retrieval of frequently accessed data.
+
+&nbsp;	Caching: Use caching strategies to reduce database load and improve performance.
+
+
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+
+
+
+
+
+📈 API Documentation Overview
+
+REST API: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
+
+GraphQL API: Provides a flexible query language for retrieving and manipulating data.
+
+📌 Endpoints Overview
+
+REST API Endpoints
+
+Users
+
+
+
+GET /users/ - List all users
+
+POST /users/ - Create a new user
+
+GET /users/{user\_id}/ - Retrieve a specific user
+
+PUT /users/{user\_id}/ - Update a specific user
+
+DELETE /users/{user\_id}/ - Delete a specific user
+
+Properties
+
+
+
+GET /properties/ - List all properties
+
+POST /properties/ - Create a new property
+
+GET /properties/{property\_id}/ - Retrieve a specific property
+
+PUT /properties/{property\_id}/ - Update a specific property
+
+DELETE /properties/{property\_id}/ - Delete a specific property
+
+Bookings
+
+
+
+GET /bookings/ - List all bookings
+
+POST /bookings/ - Create a new booking
+
+GET /bookings/{booking\_id}/ - Retrieve a specific booking
+
+PUT /bookings/{booking\_id}/ - Update a specific booking
+
+DELETE /bookings/{booking\_id}/ - Delete a specific booking
+
+Payments
+
+
+
+POST /payments/ - Process a payment
+
+Reviews
+
+
+
+GET /reviews/ - List all reviews
+
+POST /reviews/ - Create a new review
+
+GET /reviews/{review\_id}/ - Retrieve a specific review
+
+PUT /reviews/{review\_id}/ - Update a specific review
+
+DELETE /reviews/{review\_id}/ - Delete a specific review
+
